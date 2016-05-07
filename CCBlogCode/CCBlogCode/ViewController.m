@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "CCThreadVC.h"
-
+#import "CCBSDSocketVC.h"
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *sourceArray;
 @end
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _sourceArray = @[@"多线程", @"属性修饰词相关"];
+    _sourceArray = @[@"多线程", @"属性修饰词相关", @"Socket 编程"];
     
     [self setupUI];
 }
@@ -50,8 +50,18 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CCThreadVC *threadVc = [[CCThreadVC alloc] init];
-    [self.navigationController pushViewController:threadVc animated:YES];
+ 
+    if (indexPath.row == 0) {
+        CCThreadVC *threadVc = [[CCThreadVC alloc] init];
+        [self.navigationController pushViewController:threadVc animated:YES];
+    }else if (indexPath.row == 1) {
+        
+    }else if (indexPath.row == 2) {
+        CCBSDSocketVC *threadVc = [[CCBSDSocketVC alloc] init];
+        [self.navigationController pushViewController:threadVc animated:YES];
+    }else {
+        
+    }
 }
 
 

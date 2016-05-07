@@ -15,6 +15,7 @@
 		FE04A16122D652D700E5A802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A16022D652D700E5A802 /* main.m */; };
 		FE04A16B22D652D700E5A802 /* CCBlogCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A16A22D652D700E5A802 /* CCBlogCodeTests.m */; };
 		FE04A17622D652D700E5A802 /* CCBlogCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A17522D652D700E5A802 /* CCBlogCodeUITests.m */; };
+		FE0BBCFE23007FC700557FCF /* CCBSDSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */; };
 		FE283DFC22F34A39000A017B /* CCNSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283DFB22F34A39000A017B /* CCNSOperationVC.m */; };
 		FE283DFF22F8220F000A017B /* CCDeadLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283DFE22F8220F000A017B /* CCDeadLockVC.m */; };
 		FE283E0222FB39FF000A017B /* CCAtomicLock.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283E0122FB39FF000A017B /* CCAtomicLock.m */; };
@@ -59,6 +60,8 @@
 		FE04A17122D652D700E5A802 /* CCBlogCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCBlogCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE04A17522D652D700E5A802 /* CCBlogCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBlogCodeUITests.m; sourceTree = "<group>"; };
 		FE04A17722D652D700E5A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0BBCFC23007FC700557FCF /* CCBSDSocketVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBSDSocketVC.h; sourceTree = "<group>"; };
+		FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBSDSocketVC.m; sourceTree = "<group>"; };
 		FE283DFA22F34A39000A017B /* CCNSOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCNSOperationVC.h; sourceTree = "<group>"; };
 		FE283DFB22F34A39000A017B /* CCNSOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCNSOperationVC.m; sourceTree = "<group>"; };
 		FE283DFD22F8220F000A017B /* CCDeadLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDeadLockVC.h; sourceTree = "<group>"; };
@@ -130,7 +133,8 @@
 				FE04A15422D652D600E5A802 /* ViewController.h */,
 				FE04A15522D652D600E5A802 /* ViewController.m */,
 				FE95FEC522DE101B00ABDB64 /* 多线程 */,
-				FE6D76A422FD721D00426BBD /* 属性修饰词 */,
+				FE6D76A422FD721D00426BBD /* 属性修饰词&关键字 */,
+				FE0BBCF822FECE4E00557FCF /* Socket */,
 				FE04A15722D652D600E5A802 /* Main.storyboard */,
 				FE04A15A22D652D700E5A802 /* Assets.xcassets */,
 				FE04A15C22D652D700E5A802 /* LaunchScreen.storyboard */,
@@ -158,11 +162,20 @@
 			path = CCBlogCodeUITests;
 			sourceTree = "<group>";
 		};
-		FE6D76A422FD721D00426BBD /* 属性修饰词 */ = {
+		FE0BBCF822FECE4E00557FCF /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				FE0BBCFC23007FC700557FCF /* CCBSDSocketVC.h */,
+				FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		FE6D76A422FD721D00426BBD /* 属性修饰词&关键字 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "属性修饰词";
+			path = "属性修饰词&关键字";
 			sourceTree = "<group>";
 		};
 		FE95FEC522DE101B00ABDB64 /* 多线程 */ = {
@@ -325,6 +338,7 @@
 				FE04A15622D652D600E5A802 /* ViewController.m in Sources */,
 				FE04A16122D652D700E5A802 /* main.m in Sources */,
 				FE283E0222FB39FF000A017B /* CCAtomicLock.m in Sources */,
+				FE0BBCFE23007FC700557FCF /* CCBSDSocketVC.m in Sources */,
 				FE283DFC22F34A39000A017B /* CCNSOperationVC.m in Sources */,
 				FE283E0522FB3A66000A017B /* CCCTypeLock.m in Sources */,
 				FE95FECE22DE178A00ABDB64 /* CCNSThreadVC.m in Sources */,
