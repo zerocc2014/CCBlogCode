@@ -8,9 +8,9 @@
   * [OC 语言基础](ios-kai-fa/oc-yu-yan-ji-chu.md)
     * [Object-C 的 细节杂记](ios-kai-fa/oc-yu-yan-ji-chu/object-c-de-xi-jie-za-ji.md)
     * [KVC 与 KV0 剖析](ios-kai-fa/oc-yu-yan-ji-chu/kvc-yu-kv0-pou-xi.md)
-    * block 详解
+    * OC Block详解
     * 代理与通知的使用
-  * [Main 函数背后故事](ios-kai-fa/oc-main-han-shu-bei-hou-gu-shi.md)
+  * [OC Main函数的故事](ios-kai-fa/oc-main-han-shu-bei-hou-gu-shi.md)
   * Runloop
   * Runtime 运行时机制
   * 响应者链
