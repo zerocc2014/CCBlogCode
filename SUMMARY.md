@@ -2,8 +2,14 @@
 
 * [Introduction](README.md)
 * [基础知识](ji-chu-zhi-shi.md)
+  * 计算机网络
+  * 数据结构与算法
 * [iOS 开发](ios-kai-fa.md)
   * [OC 语言基础](ios-kai-fa/oc-yu-yan-ji-chu.md)
+    * [Object-C 的 细节杂记](ios-kai-fa/oc-yu-yan-ji-chu/object-c-de-xi-jie-za-ji.md)
+    * Block 详解
+    * KVC 与 KV0 剖析
+    * 代理与通知的使用
   * [Main 函数背后故事](ios-kai-fa/oc-main-han-shu-bei-hou-gu-shi.md)
   * Runloop
   * Runtime 运行时机制
