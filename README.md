@@ -2,6 +2,7 @@
 
 zerocc--iOS
 
+git@github.com:zeroccQ/Book.git
 
 /Users/CC/GitBook/Library/zerocc/oc
 
@@ -9,9 +10,7 @@ zerocc--iOS
 
 git 使用：[http://yanhaijing.com/git/2014/11/01/my-git-note/](http://yanhaijing.com/git/2014/11/01/my-git-note/)
 
-gitbook使用：[https://chrisniael.gitbooks.io/gitbook-documentation/content/format/plugins.html](https://chrisniael.gitbooks.io/gitbook-documentation/content/format/plugins.html)                    http://zhaoda.net/2015/11/09/gitbook-plugins/
+gitbook使用：[https://chrisniael.gitbooks.io/gitbook-documentation/content/format/plugins.html](https://chrisniael.gitbooks.io/gitbook-documentation/content/format/plugins.html)                    [http://zhaoda.net/2015/11/09/gitbook-plugins/](http://zhaoda.net/2015/11/09/gitbook-plugins/)
 
-http://www.chengweiyang.cn/gitbook/installation/README.html
-
-
+[http://www.chengweiyang.cn/gitbook/installation/README.html](http://www.chengweiyang.cn/gitbook/installation/README.html)
 
