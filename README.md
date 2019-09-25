@@ -42,11 +42,6 @@
 </details>
 
 <details>
-<summary> 渲染动画相关 </summary>
-  
-</details>
-
-<details>
 <summary> 运行机制相关 </summary>
   
 </details>
