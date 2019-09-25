@@ -1,14 +1,4 @@
-# Objc Code
-
-<details>
-<summary> Objc 语言特性 </summary>
-  
-</details>
-
-<details>
-<summary> Objc 语言特性 </summary>
-  
-</details>
+#### Objc Code
 
 <details>
 <summary> 语言基础 </summary>
