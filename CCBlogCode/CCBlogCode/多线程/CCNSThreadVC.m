@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
     // Pthread
     //    [self testPthread];
     
@@ -26,14 +26,11 @@
     //    [self testNSthread01];
     //    [self testNSthread02];
     [self testNSthread03];
-    
-    
 }
 
 - (void)testPthread {
     // 创建线程——定义一个 pthread_t 类型变量 Thread ID
     pthread_t thread;
-    
     
     // 开启线程——执行任务
     /*

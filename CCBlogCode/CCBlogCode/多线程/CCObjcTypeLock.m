@@ -15,7 +15,6 @@
 @property (strong, nonatomic) NSCondition *condition;
 @property (strong, nonatomic) NSConditionLock *conditionLock;
 
-
 @end
 
 @implementation CCObjcTypeLock

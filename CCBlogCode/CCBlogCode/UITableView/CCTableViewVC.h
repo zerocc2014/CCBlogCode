@@ -1,8 +1,8 @@
 //
-//  CCBSDSocketVC.h
+//  CCTableViewVC.h
 //  CCBlogCode
 //
-//  Created by zerocc on 2016/05/07.
+//  Created by zerocc on 2016/3/6.
 //  Copyright © 2016年 zerocc. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CCBSDSocketVC : UIViewController
+@interface CCTableViewVC : UIViewController
 
 @end
 

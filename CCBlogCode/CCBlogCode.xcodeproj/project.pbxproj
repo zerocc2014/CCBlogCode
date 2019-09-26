@@ -15,15 +15,81 @@
 		FE04A16122D652D700E5A802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A16022D652D700E5A802 /* main.m */; };
 		FE04A16B22D652D700E5A802 /* CCBlogCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A16A22D652D700E5A802 /* CCBlogCodeTests.m */; };
 		FE04A17622D652D700E5A802 /* CCBlogCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE04A17522D652D700E5A802 /* CCBlogCodeUITests.m */; };
-		FE0BBCFE23007FC700557FCF /* CCBSDSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */; };
+		FE0BBD04230434E200557FCF /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD00230434DC00557FCF /* GCDAsyncUdpSocket.m */; };
+		FE0BBD05230434E200557FCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD01230434DC00557FCF /* GCDAsyncSocket.m */; };
+		FE0BBD082305C67E00557FCF /* CCSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD072305C67E00557FCF /* CCSocketVC.m */; };
+		FE0BBD0B2305CA9800557FCF /* CCBSDSocketClientVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD0A2305CA9700557FCF /* CCBSDSocketClientVC.m */; };
+		FE0BBD0E2305CACB00557FCF /* CCBSDSocketServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD0D2305CACB00557FCF /* CCBSDSocketServerVC.m */; };
+		FE0BBD11230C3DDA00557FCF /* CCGCDAsyncSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0BBD10230C3DDA00557FCF /* CCGCDAsyncSocketVC.m */; };
+		FE1C970E2322B8EA00DB5D62 /* CCObjectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1C970D2322B8EA00DB5D62 /* CCObjectVC.m */; };
+		FE1C97142322DEF600DB5D62 /* CCRuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1C97132322DEF600DB5D62 /* CCRuntimePerson.m */; };
 		FE283DFC22F34A39000A017B /* CCNSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283DFB22F34A39000A017B /* CCNSOperationVC.m */; };
 		FE283DFF22F8220F000A017B /* CCDeadLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283DFE22F8220F000A017B /* CCDeadLockVC.m */; };
 		FE283E0222FB39FF000A017B /* CCAtomicLock.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283E0122FB39FF000A017B /* CCAtomicLock.m */; };
 		FE283E0522FB3A66000A017B /* CCCTypeLock.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283E0422FB3A66000A017B /* CCCTypeLock.m */; };
 		FE283E0822FB3A8D000A017B /* CCObjcTypeLock.m in Sources */ = {isa = PBXBuildFile; fileRef = FE283E0722FB3A8D000A017B /* CCObjcTypeLock.m */; };
+		FE3489572311795500E3D40F /* CCDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3489562311795500E3D40F /* CCDataPacket.m */; };
+		FE34895A2314103200E3D40F /* CCSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3489592314103200E3D40F /* CCSocketPacket.m */; };
+		FE348961231807C600E3D40F /* CCEncryptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE348960231807C600E3D40F /* CCEncryptVC.m */; };
+		FE348964231808D000E3D40F /* CCRunLoopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE348963231808D000E3D40F /* CCRunLoopVC.m */; };
+		FE34896823190AC900E3D40F /* CCModuleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE34896723190AC900E3D40F /* CCModuleVC.m */; };
+		FE3CBB56232255A00007431F /* CCTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3CBB55232255A00007431F /* CCTableViewVC.m */; };
+		FE3CBB592322570A0007431F /* CCCommonTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3CBB582322570A0007431F /* CCCommonTableViewVC.m */; };
+		FE3E6804231FC9D5000B763E /* CCPropertyKeywordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6803231FC9D5000B763E /* CCPropertyKeywordVC.m */; };
+		FE3E6808231FCB47000B763E /* CCTempDemoVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6807231FCB46000B763E /* CCTempDemoVC.mm */; };
+		FE3E680C231FDEF1000B763E /* CCMVPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E680B231FDEF1000B763E /* CCMVPVC.m */; };
+		FE3E680F231FDF6D000B763E /* CCPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E680E231FDF6D000B763E /* CCPresenter.m */; };
+		FE3E6812231FDF95000B763E /* CCView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6811231FDF95000B763E /* CCView.m */; };
+		FE3E6815231FE06C000B763E /* CCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6814231FE06C000B763E /* CCUser.m */; };
+		FE3E681F231FE339000B763E /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E681C231FE339000B763E /* NSObject+FBKVOController.m */; };
+		FE3E6820231FE339000B763E /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E681D231FE339000B763E /* FBKVOController.m */; };
+		FE3E6823231FE378000B763E /* CCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6822231FE378000B763E /* CCPerson.m */; };
+		FE3E6826231FE3C3000B763E /* CCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6825231FE3C3000B763E /* CCMenuView.m */; };
+		FE3E6829231FE3E4000B763E /* CCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6828231FE3E4000B763E /* CCViewModel.m */; };
+		FE3E682C231FF1CB000B763E /* CCMVVMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E682B231FF1CB000B763E /* CCMVVMVC.m */; };
+		FE3E6830231FF41D000B763E /* CCRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E682F231FF41D000B763E /* CCRuntimeVC.m */; };
+		FE3E6834231FF4F4000B763E /* CCNetworkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E6833231FF4F4000B763E /* CCNetworkVC.m */; };
+		FE3E68382320397E000B763E /* CCIAPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E68372320397E000B763E /* CCIAPVC.m */; };
+		FE3E683B232039EB000B763E /* CCIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E683A232039EB000B763E /* CCIAPManager.m */; };
+		FE3E684223203B9F000B763E /* CCTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E683C23203B9E000B763E /* CCTableVC.m */; };
+		FE3E684323203B9F000B763E /* CCTestTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E683D23203B9E000B763E /* CCTestTableVC.m */; };
+		FE3E684423203B9F000B763E /* CCThread.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E684023203B9E000B763E /* CCThread.m */; };
+		FE3E684623203EDB000B763E /* zero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3E684523203EDB000B763E /* zero.jpg */; };
+		FE3E68492320A970000B763E /* CCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E68482320A970000B763E /* CCSingleton.m */; };
+		FE3E684D23216ED4000B763E /* CCDataPersistenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E684C23216ED4000B763E /* CCDataPersistenceVC.m */; };
+		FE78337D2323D118001080A4 /* CCKVOKVCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78337C2323D118001080A4 /* CCKVOKVCVC.m */; };
+		FE7833802323D5AC001080A4 /* CCKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78337F2323D5AC001080A4 /* CCKVCPerson.m */; };
+		FE7833832323D6FD001080A4 /* CCKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833822323D6FD001080A4 /* CCKVCDog.m */; };
+		FE7833862323FD7D001080A4 /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833852323FD7D001080A4 /* NSObject+KVC.m */; };
+		FE7833892324022A001080A4 /* CCKVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833882324022A001080A4 /* CCKVOPerson.m */; };
+		FE78338C232412F7001080A4 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78338B232412F7001080A4 /* NSObject+KVO.m */; };
+		FE7833942324CD91001080A4 /* CCTouchEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833932324CD91001080A4 /* CCTouchEventVC.m */; };
+		FE7833972324CDF8001080A4 /* CCBlockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833962324CDF8001080A4 /* CCBlockVC.m */; };
+		FE78339B2326B87E001080A4 /* CCAOPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78339A2326B87D001080A4 /* CCAOPVC.m */; };
+		FE78339E2326B8FA001080A4 /* CCSwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FE78339D2326B8FA001080A4 /* CCSwizzleMethod.m */; };
+		FE7833A12326BA9D001080A4 /* NSArray+CCBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833A02326BA9D001080A4 /* NSArray+CCBounds.m */; };
+		FE7833A42326BC90001080A4 /* URL_Router.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833A32326BC90001080A4 /* URL_Router.m */; };
+		FE7833A72326BD7F001080A4 /* CCAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833A62326BD7F001080A4 /* CCAVC.m */; };
+		FE7833AA2326BD8D001080A4 /* CCBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833A92326BD8D001080A4 /* CCBVC.m */; };
+		FE7833AD2326C336001080A4 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833AC2326C336001080A4 /* Mediator.m */; };
+		FE7833B02326C41D001080A4 /* CCAMediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833AF2326C41D001080A4 /* CCAMediatorVC.m */; };
+		FE7833B32326C42F001080A4 /* CCBMediatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833B22326C42F001080A4 /* CCBMediatorVC.m */; };
+		FE7833B623275604001080A4 /* CCLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833B523275604001080A4 /* CCLoginVC.m */; };
+		FE7833D723275662001080A4 /* DYMMail+Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833D323275661001080A4 /* DYMMail+Logger.m */; };
+		FE7833D823275662001080A4 /* UIViewController+LifeCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833D423275662001080A4 /* UIViewController+LifeCycle.m */; };
+		FE7833D923275662001080A4 /* DYMMail.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833D523275662001080A4 /* DYMMail.m */; };
+		FE7833DD232934B5001080A4 /* CCPerformanceOptimizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833DC232934B5001080A4 /* CCPerformanceOptimizeVC.m */; };
+		FE7833E1232A4C89001080A4 /* CCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7833E0232A4C89001080A4 /* CCTest.m */; };
 		FE95FECB22DE10AC00ABDB64 /* CCThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE95FECA22DE10AC00ABDB64 /* CCThreadVC.m */; };
 		FE95FECE22DE178A00ABDB64 /* CCNSThreadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE95FECD22DE178A00ABDB64 /* CCNSThreadVC.m */; };
 		FE95FED122DE179F00ABDB64 /* CCGCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE95FED022DE179F00ABDB64 /* CCGCDVC.m */; };
+		FE9F27802333C6D800629EFD /* CCEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9F277F2333C6D800629EFD /* CCEncrypt.m */; };
+		FE9F27872333CB6C00629EFD /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = FE9F27822333CB6C00629EFD /* p.p12 */; };
+		FE9F27882333CB6C00629EFD /* rsacert.crt in Resources */ = {isa = PBXBuildFile; fileRef = FE9F27832333CB6C00629EFD /* rsacert.crt */; };
+		FE9F27892333CB6C00629EFD /* rsacert.der in Resources */ = {isa = PBXBuildFile; fileRef = FE9F27842333CB6C00629EFD /* rsacert.der */; };
+		FE9F278A2333CB6C00629EFD /* rsacert.csr in Resources */ = {isa = PBXBuildFile; fileRef = FE9F27852333CB6C00629EFD /* rsacert.csr */; };
+		FE9F278B2333CB6C00629EFD /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = FE9F27862333CB6C00629EFD /* private.pem */; };
+		FE9F2806233BE2DB00629EFD /* LinkedList1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9F2805233BE2DB00629EFD /* LinkedList1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +126,22 @@
 		FE04A17122D652D700E5A802 /* CCBlogCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCBlogCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE04A17522D652D700E5A802 /* CCBlogCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBlogCodeUITests.m; sourceTree = "<group>"; };
 		FE04A17722D652D700E5A802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE0BBCFC23007FC700557FCF /* CCBSDSocketVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBSDSocketVC.h; sourceTree = "<group>"; };
-		FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBSDSocketVC.m; sourceTree = "<group>"; };
+		FE0BBD00230434DC00557FCF /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		FE0BBD01230434DC00557FCF /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		FE0BBD02230434DC00557FCF /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		FE0BBD03230434DC00557FCF /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		FE0BBD062305C67E00557FCF /* CCSocketVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSocketVC.h; sourceTree = "<group>"; };
+		FE0BBD072305C67E00557FCF /* CCSocketVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSocketVC.m; sourceTree = "<group>"; };
+		FE0BBD092305CA9700557FCF /* CCBSDSocketClientVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBSDSocketClientVC.h; sourceTree = "<group>"; };
+		FE0BBD0A2305CA9700557FCF /* CCBSDSocketClientVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBSDSocketClientVC.m; sourceTree = "<group>"; };
+		FE0BBD0C2305CACB00557FCF /* CCBSDSocketServerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBSDSocketServerVC.h; sourceTree = "<group>"; };
+		FE0BBD0D2305CACB00557FCF /* CCBSDSocketServerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBSDSocketServerVC.m; sourceTree = "<group>"; };
+		FE0BBD0F230C3DDA00557FCF /* CCGCDAsyncSocketVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCGCDAsyncSocketVC.h; sourceTree = "<group>"; };
+		FE0BBD10230C3DDA00557FCF /* CCGCDAsyncSocketVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCGCDAsyncSocketVC.m; sourceTree = "<group>"; };
+		FE1C970C2322B8EA00DB5D62 /* CCObjectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCObjectVC.h; sourceTree = "<group>"; };
+		FE1C970D2322B8EA00DB5D62 /* CCObjectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCObjectVC.m; sourceTree = "<group>"; };
+		FE1C97122322DEF600DB5D62 /* CCRuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRuntimePerson.h; sourceTree = "<group>"; };
+		FE1C97132322DEF600DB5D62 /* CCRuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRuntimePerson.m; sourceTree = "<group>"; };
 		FE283DFA22F34A39000A017B /* CCNSOperationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCNSOperationVC.h; sourceTree = "<group>"; };
 		FE283DFB22F34A39000A017B /* CCNSOperationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCNSOperationVC.m; sourceTree = "<group>"; };
 		FE283DFD22F8220F000A017B /* CCDeadLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDeadLockVC.h; sourceTree = "<group>"; };
@@ -72,12 +152,127 @@
 		FE283E0422FB3A66000A017B /* CCCTypeLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCCTypeLock.m; sourceTree = "<group>"; };
 		FE283E0622FB3A8D000A017B /* CCObjcTypeLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCObjcTypeLock.h; sourceTree = "<group>"; };
 		FE283E0722FB3A8D000A017B /* CCObjcTypeLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCObjcTypeLock.m; sourceTree = "<group>"; };
+		FE3489552311795500E3D40F /* CCDataPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDataPacket.h; sourceTree = "<group>"; };
+		FE3489562311795500E3D40F /* CCDataPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDataPacket.m; sourceTree = "<group>"; };
+		FE3489582314103200E3D40F /* CCSocketPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSocketPacket.h; sourceTree = "<group>"; };
+		FE3489592314103200E3D40F /* CCSocketPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSocketPacket.m; sourceTree = "<group>"; };
+		FE34895C231461AF00E3D40F /* CFRunLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFRunLoop.h; sourceTree = "<group>"; };
+		FE34895D231461AF00E3D40F /* CFRunLoop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CFRunLoop.c; sourceTree = "<group>"; };
+		FE34895F231807C600E3D40F /* CCEncryptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCEncryptVC.h; sourceTree = "<group>"; };
+		FE348960231807C600E3D40F /* CCEncryptVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCEncryptVC.m; sourceTree = "<group>"; };
+		FE348962231808D000E3D40F /* CCRunLoopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRunLoopVC.h; sourceTree = "<group>"; };
+		FE348963231808D000E3D40F /* CCRunLoopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRunLoopVC.m; sourceTree = "<group>"; };
+		FE34896623190AC900E3D40F /* CCModuleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCModuleVC.h; sourceTree = "<group>"; };
+		FE34896723190AC900E3D40F /* CCModuleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCModuleVC.m; sourceTree = "<group>"; };
+		FE3CBB54232255A00007431F /* CCTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTableViewVC.h; sourceTree = "<group>"; };
+		FE3CBB55232255A00007431F /* CCTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTableViewVC.m; sourceTree = "<group>"; };
+		FE3CBB572322570A0007431F /* CCCommonTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCCommonTableViewVC.h; sourceTree = "<group>"; };
+		FE3CBB582322570A0007431F /* CCCommonTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCCommonTableViewVC.m; sourceTree = "<group>"; };
+		FE3E6802231FC9D5000B763E /* CCPropertyKeywordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPropertyKeywordVC.h; sourceTree = "<group>"; };
+		FE3E6803231FC9D5000B763E /* CCPropertyKeywordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPropertyKeywordVC.m; sourceTree = "<group>"; };
+		FE3E6806231FCB46000B763E /* CCTempDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTempDemoVC.h; sourceTree = "<group>"; };
+		FE3E6807231FCB46000B763E /* CCTempDemoVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CCTempDemoVC.mm; sourceTree = "<group>"; };
+		FE3E680A231FDEF1000B763E /* CCMVPVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMVPVC.h; sourceTree = "<group>"; };
+		FE3E680B231FDEF1000B763E /* CCMVPVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMVPVC.m; sourceTree = "<group>"; };
+		FE3E680D231FDF6D000B763E /* CCPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPresenter.h; sourceTree = "<group>"; };
+		FE3E680E231FDF6D000B763E /* CCPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPresenter.m; sourceTree = "<group>"; };
+		FE3E6810231FDF95000B763E /* CCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCView.h; sourceTree = "<group>"; };
+		FE3E6811231FDF95000B763E /* CCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCView.m; sourceTree = "<group>"; };
+		FE3E6813231FE06C000B763E /* CCUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCUser.h; sourceTree = "<group>"; };
+		FE3E6814231FE06C000B763E /* CCUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCUser.m; sourceTree = "<group>"; };
+		FE3E681B231FE339000B763E /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		FE3E681C231FE339000B763E /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		FE3E681D231FE339000B763E /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		FE3E681E231FE339000B763E /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		FE3E6821231FE378000B763E /* CCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPerson.h; sourceTree = "<group>"; };
+		FE3E6822231FE378000B763E /* CCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPerson.m; sourceTree = "<group>"; };
+		FE3E6824231FE3C3000B763E /* CCMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMenuView.h; sourceTree = "<group>"; };
+		FE3E6825231FE3C3000B763E /* CCMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMenuView.m; sourceTree = "<group>"; };
+		FE3E6827231FE3E4000B763E /* CCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewModel.h; sourceTree = "<group>"; };
+		FE3E6828231FE3E4000B763E /* CCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewModel.m; sourceTree = "<group>"; };
+		FE3E682A231FF1CB000B763E /* CCMVVMVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMVVMVC.h; sourceTree = "<group>"; };
+		FE3E682B231FF1CB000B763E /* CCMVVMVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMVVMVC.m; sourceTree = "<group>"; };
+		FE3E682E231FF41D000B763E /* CCRuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRuntimeVC.h; sourceTree = "<group>"; };
+		FE3E682F231FF41D000B763E /* CCRuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRuntimeVC.m; sourceTree = "<group>"; };
+		FE3E6832231FF4F4000B763E /* CCNetworkVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCNetworkVC.h; sourceTree = "<group>"; };
+		FE3E6833231FF4F4000B763E /* CCNetworkVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCNetworkVC.m; sourceTree = "<group>"; };
+		FE3E68362320397E000B763E /* CCIAPVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCIAPVC.h; sourceTree = "<group>"; };
+		FE3E68372320397E000B763E /* CCIAPVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCIAPVC.m; sourceTree = "<group>"; };
+		FE3E6839232039EB000B763E /* CCIAPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCIAPManager.h; sourceTree = "<group>"; };
+		FE3E683A232039EB000B763E /* CCIAPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCIAPManager.m; sourceTree = "<group>"; };
+		FE3E683C23203B9E000B763E /* CCTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableVC.m; sourceTree = "<group>"; };
+		FE3E683D23203B9E000B763E /* CCTestTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTestTableVC.m; sourceTree = "<group>"; };
+		FE3E683E23203B9E000B763E /* CCThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCThread.h; sourceTree = "<group>"; };
+		FE3E683F23203B9E000B763E /* CCTestTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTestTableVC.h; sourceTree = "<group>"; };
+		FE3E684023203B9E000B763E /* CCThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCThread.m; sourceTree = "<group>"; };
+		FE3E684123203B9E000B763E /* CCTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableVC.h; sourceTree = "<group>"; };
+		FE3E684523203EDB000B763E /* zero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zero.jpg; sourceTree = "<group>"; };
+		FE3E68472320A970000B763E /* CCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSingleton.h; sourceTree = "<group>"; };
+		FE3E68482320A970000B763E /* CCSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSingleton.m; sourceTree = "<group>"; };
+		FE3E684B23216ED4000B763E /* CCDataPersistenceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDataPersistenceVC.h; sourceTree = "<group>"; };
+		FE3E684C23216ED4000B763E /* CCDataPersistenceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDataPersistenceVC.m; sourceTree = "<group>"; };
+		FE7833782322E857001080A4 /* CCObjectVC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CCObjectVC.cpp; sourceTree = "<group>"; };
+		FE7833792322EC55001080A4 /* CCRuntimePerson.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CCRuntimePerson.cpp; sourceTree = "<group>"; };
+		FE78337B2323D118001080A4 /* CCKVOKVCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKVOKVCVC.h; sourceTree = "<group>"; };
+		FE78337C2323D118001080A4 /* CCKVOKVCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKVOKVCVC.m; sourceTree = "<group>"; };
+		FE78337E2323D5AC001080A4 /* CCKVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKVCPerson.h; sourceTree = "<group>"; };
+		FE78337F2323D5AC001080A4 /* CCKVCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKVCPerson.m; sourceTree = "<group>"; };
+		FE7833812323D6FD001080A4 /* CCKVCDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKVCDog.h; sourceTree = "<group>"; };
+		FE7833822323D6FD001080A4 /* CCKVCDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKVCDog.m; sourceTree = "<group>"; };
+		FE7833842323FD7D001080A4 /* NSObject+KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVC.h"; sourceTree = "<group>"; };
+		FE7833852323FD7D001080A4 /* NSObject+KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVC.m"; sourceTree = "<group>"; };
+		FE7833872324022A001080A4 /* CCKVOPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCKVOPerson.h; sourceTree = "<group>"; };
+		FE7833882324022A001080A4 /* CCKVOPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCKVOPerson.m; sourceTree = "<group>"; };
+		FE78338A232412F7001080A4 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		FE78338B232412F7001080A4 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
+		FE7833922324CD91001080A4 /* CCTouchEventVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTouchEventVC.h; sourceTree = "<group>"; };
+		FE7833932324CD91001080A4 /* CCTouchEventVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTouchEventVC.m; sourceTree = "<group>"; };
+		FE7833952324CDF8001080A4 /* CCBlockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBlockVC.h; sourceTree = "<group>"; };
+		FE7833962324CDF8001080A4 /* CCBlockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBlockVC.m; sourceTree = "<group>"; };
+		FE7833992326B87D001080A4 /* CCAOPVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAOPVC.h; sourceTree = "<group>"; };
+		FE78339A2326B87D001080A4 /* CCAOPVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAOPVC.m; sourceTree = "<group>"; };
+		FE78339C2326B8FA001080A4 /* CCSwizzleMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSwizzleMethod.h; sourceTree = "<group>"; };
+		FE78339D2326B8FA001080A4 /* CCSwizzleMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSwizzleMethod.m; sourceTree = "<group>"; };
+		FE78339F2326BA9D001080A4 /* NSArray+CCBounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+CCBounds.h"; sourceTree = "<group>"; };
+		FE7833A02326BA9D001080A4 /* NSArray+CCBounds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CCBounds.m"; sourceTree = "<group>"; };
+		FE7833A22326BC90001080A4 /* URL_Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URL_Router.h; sourceTree = "<group>"; };
+		FE7833A32326BC90001080A4 /* URL_Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URL_Router.m; sourceTree = "<group>"; };
+		FE7833A52326BD7F001080A4 /* CCAVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAVC.h; sourceTree = "<group>"; };
+		FE7833A62326BD7F001080A4 /* CCAVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAVC.m; sourceTree = "<group>"; };
+		FE7833A82326BD8D001080A4 /* CCBVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBVC.h; sourceTree = "<group>"; };
+		FE7833A92326BD8D001080A4 /* CCBVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBVC.m; sourceTree = "<group>"; };
+		FE7833AB2326C336001080A4 /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		FE7833AC2326C336001080A4 /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		FE7833AE2326C41D001080A4 /* CCAMediatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAMediatorVC.h; sourceTree = "<group>"; };
+		FE7833AF2326C41D001080A4 /* CCAMediatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAMediatorVC.m; sourceTree = "<group>"; };
+		FE7833B12326C42F001080A4 /* CCBMediatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBMediatorVC.h; sourceTree = "<group>"; };
+		FE7833B22326C42F001080A4 /* CCBMediatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCBMediatorVC.m; sourceTree = "<group>"; };
+		FE7833B423275604001080A4 /* CCLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCLoginVC.h; sourceTree = "<group>"; };
+		FE7833B523275604001080A4 /* CCLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCLoginVC.m; sourceTree = "<group>"; };
+		FE7833D123275661001080A4 /* DYMMail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMMail.h; sourceTree = "<group>"; };
+		FE7833D223275661001080A4 /* UIViewController+LifeCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LifeCycle.h"; sourceTree = "<group>"; };
+		FE7833D323275661001080A4 /* DYMMail+Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DYMMail+Logger.m"; sourceTree = "<group>"; };
+		FE7833D423275662001080A4 /* UIViewController+LifeCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LifeCycle.m"; sourceTree = "<group>"; };
+		FE7833D523275662001080A4 /* DYMMail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYMMail.m; sourceTree = "<group>"; };
+		FE7833D623275662001080A4 /* DYMMail+Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DYMMail+Logger.h"; sourceTree = "<group>"; };
+		FE7833DB232934B5001080A4 /* CCPerformanceOptimizeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCPerformanceOptimizeVC.h; sourceTree = "<group>"; };
+		FE7833DC232934B5001080A4 /* CCPerformanceOptimizeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCPerformanceOptimizeVC.m; sourceTree = "<group>"; };
+		FE7833DF232A4C89001080A4 /* CCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTest.h; sourceTree = "<group>"; };
+		FE7833E0232A4C89001080A4 /* CCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTest.m; sourceTree = "<group>"; };
 		FE95FEC922DE10AC00ABDB64 /* CCThreadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCThreadVC.h; sourceTree = "<group>"; };
 		FE95FECA22DE10AC00ABDB64 /* CCThreadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCThreadVC.m; sourceTree = "<group>"; };
 		FE95FECC22DE178A00ABDB64 /* CCNSThreadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCNSThreadVC.h; sourceTree = "<group>"; };
 		FE95FECD22DE178A00ABDB64 /* CCNSThreadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCNSThreadVC.m; sourceTree = "<group>"; };
 		FE95FECF22DE179F00ABDB64 /* CCGCDVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCGCDVC.h; sourceTree = "<group>"; };
 		FE95FED022DE179F00ABDB64 /* CCGCDVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCGCDVC.m; sourceTree = "<group>"; };
+		FE9F277E2333C6D800629EFD /* CCEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCEncrypt.h; sourceTree = "<group>"; };
+		FE9F277F2333C6D800629EFD /* CCEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCEncrypt.m; sourceTree = "<group>"; };
+		FE9F27822333CB6C00629EFD /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = p.p12; sourceTree = "<group>"; };
+		FE9F27832333CB6C00629EFD /* rsacert.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsacert.crt; sourceTree = "<group>"; };
+		FE9F27842333CB6C00629EFD /* rsacert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsacert.der; sourceTree = "<group>"; };
+		FE9F27852333CB6C00629EFD /* rsacert.csr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsacert.csr; sourceTree = "<group>"; };
+		FE9F27862333CB6C00629EFD /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		FE9F2805233BE2DB00629EFD /* LinkedList1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +327,26 @@
 				FE04A15222D652D600E5A802 /* AppDelegate.m */,
 				FE04A15422D652D600E5A802 /* ViewController.h */,
 				FE04A15522D652D600E5A802 /* ViewController.m */,
+				FE3E6801231FC9C1000B763E /* 属性修饰词&关键字 */,
+				FE78337A2323D04A001080A4 /* KVO&KVC */,
 				FE95FEC522DE101B00ABDB64 /* 多线程 */,
-				FE6D76A422FD721D00426BBD /* 属性修饰词&关键字 */,
 				FE0BBCF822FECE4E00557FCF /* Socket */,
+				FE3E6831231FF4AD000B763E /* 网络层基础 */,
+				FE34895E231806D400E3D40F /* 密码学 */,
+				FE3CBB53232255560007431F /* UITableView */,
+				FE3E682D231FF403000B763E /* Runtime */,
+				FE78338D2324CCBC001080A4 /* Block */,
+				FE34895B2314617A00E3D40F /* RunLoop */,
+				FE7833912324CD3F001080A4 /* 事件传递&响应链 */,
+				FE3E684A23216E3F000B763E /* 持久化方案 */,
+				FE7833982326B853001080A4 /* AOP切面编程 */,
+				FE7833DA23293447001080A4 /* 性能优化 */,
+				FE3E6816231FE2F4000B763E /* MVVM */,
+				FE3E6809231FDED3000B763E /* MVP */,
+				FE34896523190A8700E3D40F /* 组件化架构 */,
+				FE3E683523203908000B763E /* IAP内购 */,
+				FE9F277D2333C2D900629EFD /* APM */,
+				FE3E6805231FCB08000B763E /* CCTemp */,
 				FE04A15722D652D600E5A802 /* Main.storyboard */,
 				FE04A15A22D652D700E5A802 /* Assets.xcassets */,
 				FE04A15C22D652D700E5A802 /* LaunchScreen.storyboard */,
@@ -165,17 +377,279 @@
 		FE0BBCF822FECE4E00557FCF /* Socket */ = {
 			isa = PBXGroup;
 			children = (
-				FE0BBCFC23007FC700557FCF /* CCBSDSocketVC.h */,
-				FE0BBCFD23007FC700557FCF /* CCBSDSocketVC.m */,
+				FE0BBD062305C67E00557FCF /* CCSocketVC.h */,
+				FE0BBD072305C67E00557FCF /* CCSocketVC.m */,
+				FE0BBD092305CA9700557FCF /* CCBSDSocketClientVC.h */,
+				FE0BBD0A2305CA9700557FCF /* CCBSDSocketClientVC.m */,
+				FE0BBD0C2305CACB00557FCF /* CCBSDSocketServerVC.h */,
+				FE0BBD0D2305CACB00557FCF /* CCBSDSocketServerVC.m */,
+				FE0BBD0F230C3DDA00557FCF /* CCGCDAsyncSocketVC.h */,
+				FE0BBD10230C3DDA00557FCF /* CCGCDAsyncSocketVC.m */,
+				FE3489582314103200E3D40F /* CCSocketPacket.h */,
+				FE3489592314103200E3D40F /* CCSocketPacket.m */,
+				FE3489552311795500E3D40F /* CCDataPacket.h */,
+				FE3489562311795500E3D40F /* CCDataPacket.m */,
+				FE0BBCFF230434DC00557FCF /* CocoaAsyncSocket */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
 		};
-		FE6D76A422FD721D00426BBD /* 属性修饰词&关键字 */ = {
+		FE0BBCFF230434DC00557FCF /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
+				FE0BBD03230434DC00557FCF /* GCDAsyncSocket.h */,
+				FE0BBD01230434DC00557FCF /* GCDAsyncSocket.m */,
+				FE0BBD02230434DC00557FCF /* GCDAsyncUdpSocket.h */,
+				FE0BBD00230434DC00557FCF /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		FE34895B2314617A00E3D40F /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E684523203EDB000B763E /* zero.jpg */,
+				FE348962231808D000E3D40F /* CCRunLoopVC.h */,
+				FE348963231808D000E3D40F /* CCRunLoopVC.m */,
+				FE3E684123203B9E000B763E /* CCTableVC.h */,
+				FE3E683C23203B9E000B763E /* CCTableVC.m */,
+				FE3E683F23203B9E000B763E /* CCTestTableVC.h */,
+				FE3E683D23203B9E000B763E /* CCTestTableVC.m */,
+				FE3E683E23203B9E000B763E /* CCThread.h */,
+				FE3E684023203B9E000B763E /* CCThread.m */,
+				FE34895D231461AF00E3D40F /* CFRunLoop.c */,
+				FE34895C231461AF00E3D40F /* CFRunLoop.h */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		FE34895E231806D400E3D40F /* 密码学 */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F27812333CB6C00629EFD /* CryptologyResource */,
+				FE34895F231807C600E3D40F /* CCEncryptVC.h */,
+				FE348960231807C600E3D40F /* CCEncryptVC.m */,
+				FE9F277E2333C6D800629EFD /* CCEncrypt.h */,
+				FE9F277F2333C6D800629EFD /* CCEncrypt.m */,
+			);
+			path = "密码学";
+			sourceTree = "<group>";
+		};
+		FE34896523190A8700E3D40F /* 组件化架构 */ = {
+			isa = PBXGroup;
+			children = (
+				FE34896623190AC900E3D40F /* CCModuleVC.h */,
+				FE34896723190AC900E3D40F /* CCModuleVC.m */,
+				FE9F278C2337CAB400629EFD /* Target-Action */,
+				FE7833A22326BC90001080A4 /* URL_Router.h */,
+				FE7833A32326BC90001080A4 /* URL_Router.m */,
+				FE7833A52326BD7F001080A4 /* CCAVC.h */,
+				FE7833A62326BD7F001080A4 /* CCAVC.m */,
+				FE7833A82326BD8D001080A4 /* CCBVC.h */,
+				FE7833A92326BD8D001080A4 /* CCBVC.m */,
+				FE7833AB2326C336001080A4 /* Mediator.h */,
+				FE7833AC2326C336001080A4 /* Mediator.m */,
+				FE7833AE2326C41D001080A4 /* CCAMediatorVC.h */,
+				FE7833AF2326C41D001080A4 /* CCAMediatorVC.m */,
+				FE7833B12326C42F001080A4 /* CCBMediatorVC.h */,
+				FE7833B22326C42F001080A4 /* CCBMediatorVC.m */,
+			);
+			path = "组件化架构";
+			sourceTree = "<group>";
+		};
+		FE3CBB53232255560007431F /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				FE3CBB54232255A00007431F /* CCTableViewVC.h */,
+				FE3CBB55232255A00007431F /* CCTableViewVC.m */,
+				FE3CBB572322570A0007431F /* CCCommonTableViewVC.h */,
+				FE3CBB582322570A0007431F /* CCCommonTableViewVC.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		FE3E6801231FC9C1000B763E /* 属性修饰词&关键字 */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E6802231FC9D5000B763E /* CCPropertyKeywordVC.h */,
+				FE3E6803231FC9D5000B763E /* CCPropertyKeywordVC.m */,
 			);
 			path = "属性修饰词&关键字";
+			sourceTree = "<group>";
+		};
+		FE3E6805231FCB08000B763E /* CCTemp */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F2805233BE2DB00629EFD /* LinkedList1.cpp */,
+				FE3E6806231FCB46000B763E /* CCTempDemoVC.h */,
+				FE3E6807231FCB46000B763E /* CCTempDemoVC.mm */,
+				FE3E68472320A970000B763E /* CCSingleton.h */,
+				FE3E68482320A970000B763E /* CCSingleton.m */,
+				FE7833DF232A4C89001080A4 /* CCTest.h */,
+				FE7833E0232A4C89001080A4 /* CCTest.m */,
+			);
+			path = CCTemp;
+			sourceTree = "<group>";
+		};
+		FE3E6809231FDED3000B763E /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E680A231FDEF1000B763E /* CCMVPVC.h */,
+				FE3E680B231FDEF1000B763E /* CCMVPVC.m */,
+				FE3E680D231FDF6D000B763E /* CCPresenter.h */,
+				FE3E680E231FDF6D000B763E /* CCPresenter.m */,
+				FE3E6810231FDF95000B763E /* CCView.h */,
+				FE3E6811231FDF95000B763E /* CCView.m */,
+				FE3E6813231FE06C000B763E /* CCUser.h */,
+				FE3E6814231FE06C000B763E /* CCUser.m */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		FE3E6816231FE2F4000B763E /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E681A231FE339000B763E /* KVOController */,
+				FE3E682A231FF1CB000B763E /* CCMVVMVC.h */,
+				FE3E682B231FF1CB000B763E /* CCMVVMVC.m */,
+				FE3E6827231FE3E4000B763E /* CCViewModel.h */,
+				FE3E6828231FE3E4000B763E /* CCViewModel.m */,
+				FE3E6824231FE3C3000B763E /* CCMenuView.h */,
+				FE3E6825231FE3C3000B763E /* CCMenuView.m */,
+				FE3E6821231FE378000B763E /* CCPerson.h */,
+				FE3E6822231FE378000B763E /* CCPerson.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		FE3E681A231FE339000B763E /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E681B231FE339000B763E /* FBKVOController.h */,
+				FE3E681D231FE339000B763E /* FBKVOController.m */,
+				FE3E681E231FE339000B763E /* NSObject+FBKVOController.h */,
+				FE3E681C231FE339000B763E /* NSObject+FBKVOController.m */,
+			);
+			path = KVOController;
+			sourceTree = "<group>";
+		};
+		FE3E682D231FF403000B763E /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E682E231FF41D000B763E /* CCRuntimeVC.h */,
+				FE3E682F231FF41D000B763E /* CCRuntimeVC.m */,
+				FE1C970C2322B8EA00DB5D62 /* CCObjectVC.h */,
+				FE1C970D2322B8EA00DB5D62 /* CCObjectVC.m */,
+				FE1C97122322DEF600DB5D62 /* CCRuntimePerson.h */,
+				FE1C97132322DEF600DB5D62 /* CCRuntimePerson.m */,
+				FE7833782322E857001080A4 /* CCObjectVC.cpp */,
+				FE7833792322EC55001080A4 /* CCRuntimePerson.cpp */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		FE3E6831231FF4AD000B763E /* 网络层基础 */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E6832231FF4F4000B763E /* CCNetworkVC.h */,
+				FE3E6833231FF4F4000B763E /* CCNetworkVC.m */,
+			);
+			path = "网络层基础";
+			sourceTree = "<group>";
+		};
+		FE3E683523203908000B763E /* IAP内购 */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E68362320397E000B763E /* CCIAPVC.h */,
+				FE3E68372320397E000B763E /* CCIAPVC.m */,
+				FE3E6839232039EB000B763E /* CCIAPManager.h */,
+				FE3E683A232039EB000B763E /* CCIAPManager.m */,
+			);
+			path = "IAP内购";
+			sourceTree = "<group>";
+		};
+		FE3E684A23216E3F000B763E /* 持久化方案 */ = {
+			isa = PBXGroup;
+			children = (
+				FE3E684B23216ED4000B763E /* CCDataPersistenceVC.h */,
+				FE3E684C23216ED4000B763E /* CCDataPersistenceVC.m */,
+			);
+			path = "持久化方案";
+			sourceTree = "<group>";
+		};
+		FE78337A2323D04A001080A4 /* KVO&KVC */ = {
+			isa = PBXGroup;
+			children = (
+				FE78337B2323D118001080A4 /* CCKVOKVCVC.h */,
+				FE78337C2323D118001080A4 /* CCKVOKVCVC.m */,
+				FE78337E2323D5AC001080A4 /* CCKVCPerson.h */,
+				FE78337F2323D5AC001080A4 /* CCKVCPerson.m */,
+				FE7833812323D6FD001080A4 /* CCKVCDog.h */,
+				FE7833822323D6FD001080A4 /* CCKVCDog.m */,
+				FE7833842323FD7D001080A4 /* NSObject+KVC.h */,
+				FE7833852323FD7D001080A4 /* NSObject+KVC.m */,
+				FE7833872324022A001080A4 /* CCKVOPerson.h */,
+				FE7833882324022A001080A4 /* CCKVOPerson.m */,
+				FE78338A232412F7001080A4 /* NSObject+KVO.h */,
+				FE78338B232412F7001080A4 /* NSObject+KVO.m */,
+			);
+			path = "KVO&KVC";
+			sourceTree = "<group>";
+		};
+		FE78338D2324CCBC001080A4 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				FE7833952324CDF8001080A4 /* CCBlockVC.h */,
+				FE7833962324CDF8001080A4 /* CCBlockVC.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		FE7833912324CD3F001080A4 /* 事件传递&响应链 */ = {
+			isa = PBXGroup;
+			children = (
+				FE7833922324CD91001080A4 /* CCTouchEventVC.h */,
+				FE7833932324CD91001080A4 /* CCTouchEventVC.m */,
+			);
+			path = "事件传递&响应链";
+			sourceTree = "<group>";
+		};
+		FE7833982326B853001080A4 /* AOP切面编程 */ = {
+			isa = PBXGroup;
+			children = (
+				FE7833D023275661001080A4 /* Debug */,
+				FE7833992326B87D001080A4 /* CCAOPVC.h */,
+				FE78339A2326B87D001080A4 /* CCAOPVC.m */,
+				FE78339C2326B8FA001080A4 /* CCSwizzleMethod.h */,
+				FE78339D2326B8FA001080A4 /* CCSwizzleMethod.m */,
+				FE78339F2326BA9D001080A4 /* NSArray+CCBounds.h */,
+				FE7833A02326BA9D001080A4 /* NSArray+CCBounds.m */,
+				FE7833B423275604001080A4 /* CCLoginVC.h */,
+				FE7833B523275604001080A4 /* CCLoginVC.m */,
+			);
+			path = "AOP切面编程";
+			sourceTree = "<group>";
+		};
+		FE7833D023275661001080A4 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				FE7833D123275661001080A4 /* DYMMail.h */,
+				FE7833D523275662001080A4 /* DYMMail.m */,
+				FE7833D223275661001080A4 /* UIViewController+LifeCycle.h */,
+				FE7833D423275662001080A4 /* UIViewController+LifeCycle.m */,
+				FE7833D623275662001080A4 /* DYMMail+Logger.h */,
+				FE7833D323275661001080A4 /* DYMMail+Logger.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		FE7833DA23293447001080A4 /* 性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				FE7833DB232934B5001080A4 /* CCPerformanceOptimizeVC.h */,
+				FE7833DC232934B5001080A4 /* CCPerformanceOptimizeVC.m */,
+			);
+			path = "性能优化";
 			sourceTree = "<group>";
 		};
 		FE95FEC522DE101B00ABDB64 /* 多线程 */ = {
@@ -199,6 +673,32 @@
 				FE283E0722FB3A8D000A017B /* CCObjcTypeLock.m */,
 			);
 			path = "多线程";
+			sourceTree = "<group>";
+		};
+		FE9F277D2333C2D900629EFD /* APM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APM;
+			sourceTree = "<group>";
+		};
+		FE9F27812333CB6C00629EFD /* CryptologyResource */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F27822333CB6C00629EFD /* p.p12 */,
+				FE9F27832333CB6C00629EFD /* rsacert.crt */,
+				FE9F27842333CB6C00629EFD /* rsacert.der */,
+				FE9F27852333CB6C00629EFD /* rsacert.csr */,
+				FE9F27862333CB6C00629EFD /* private.pem */,
+			);
+			path = CryptologyResource;
+			sourceTree = "<group>";
+		};
+		FE9F278C2337CAB400629EFD /* Target-Action */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Target-Action";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,8 +809,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE04A15E22D652D700E5A802 /* LaunchScreen.storyboard in Resources */,
+				FE9F27892333CB6C00629EFD /* rsacert.der in Resources */,
 				FE04A15B22D652D700E5A802 /* Assets.xcassets in Resources */,
 				FE04A15922D652D600E5A802 /* Main.storyboard in Resources */,
+				FE9F278B2333CB6C00629EFD /* private.pem in Resources */,
+				FE9F27872333CB6C00629EFD /* p.p12 in Resources */,
+				FE9F278A2333CB6C00629EFD /* rsacert.csr in Resources */,
+				FE9F27882333CB6C00629EFD /* rsacert.crt in Resources */,
+				FE3E684623203EDB000B763E /* zero.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,18 +841,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7833B32326C42F001080A4 /* CCBMediatorVC.m in Sources */,
+				FE7833D923275662001080A4 /* DYMMail.m in Sources */,
+				FE0BBD0B2305CA9800557FCF /* CCBSDSocketClientVC.m in Sources */,
+				FE3E684323203B9F000B763E /* CCTestTableVC.m in Sources */,
 				FE04A15622D652D600E5A802 /* ViewController.m in Sources */,
+				FE3E684423203B9F000B763E /* CCThread.m in Sources */,
+				FE3E6823231FE378000B763E /* CCPerson.m in Sources */,
+				FE0BBD082305C67E00557FCF /* CCSocketVC.m in Sources */,
+				FE7833A72326BD7F001080A4 /* CCAVC.m in Sources */,
+				FE3E680C231FDEF1000B763E /* CCMVPVC.m in Sources */,
+				FE3E6808231FCB47000B763E /* CCTempDemoVC.mm in Sources */,
+				FE348964231808D000E3D40F /* CCRunLoopVC.m in Sources */,
+				FE3E68382320397E000B763E /* CCIAPVC.m in Sources */,
+				FE3E684223203B9F000B763E /* CCTableVC.m in Sources */,
+				FE78339B2326B87E001080A4 /* CCAOPVC.m in Sources */,
+				FE7833862323FD7D001080A4 /* NSObject+KVC.m in Sources */,
+				FE3E681F231FE339000B763E /* NSObject+FBKVOController.m in Sources */,
+				FE34896823190AC900E3D40F /* CCModuleVC.m in Sources */,
+				FE3E683B232039EB000B763E /* CCIAPManager.m in Sources */,
+				FE7833A42326BC90001080A4 /* URL_Router.m in Sources */,
+				FE7833972324CDF8001080A4 /* CCBlockVC.m in Sources */,
+				FE3E6834231FF4F4000B763E /* CCNetworkVC.m in Sources */,
+				FE7833832323D6FD001080A4 /* CCKVCDog.m in Sources */,
+				FE78339E2326B8FA001080A4 /* CCSwizzleMethod.m in Sources */,
 				FE04A16122D652D700E5A802 /* main.m in Sources */,
+				FE3E6830231FF41D000B763E /* CCRuntimeVC.m in Sources */,
 				FE283E0222FB39FF000A017B /* CCAtomicLock.m in Sources */,
-				FE0BBCFE23007FC700557FCF /* CCBSDSocketVC.m in Sources */,
+				FE0BBD0E2305CACB00557FCF /* CCBSDSocketServerVC.m in Sources */,
+				FE7833B02326C41D001080A4 /* CCAMediatorVC.m in Sources */,
+				FE7833802323D5AC001080A4 /* CCKVCPerson.m in Sources */,
 				FE283DFC22F34A39000A017B /* CCNSOperationVC.m in Sources */,
 				FE283E0522FB3A66000A017B /* CCCTypeLock.m in Sources */,
+				FE7833D823275662001080A4 /* UIViewController+LifeCycle.m in Sources */,
+				FE3E6826231FE3C3000B763E /* CCMenuView.m in Sources */,
+				FE7833DD232934B5001080A4 /* CCPerformanceOptimizeVC.m in Sources */,
+				FE3E6815231FE06C000B763E /* CCUser.m in Sources */,
+				FE348961231807C600E3D40F /* CCEncryptVC.m in Sources */,
+				FE7833AA2326BD8D001080A4 /* CCBVC.m in Sources */,
+				FE0BBD11230C3DDA00557FCF /* CCGCDAsyncSocketVC.m in Sources */,
+				FE7833E1232A4C89001080A4 /* CCTest.m in Sources */,
+				FE3E682C231FF1CB000B763E /* CCMVVMVC.m in Sources */,
+				FE7833892324022A001080A4 /* CCKVOPerson.m in Sources */,
+				FE3E6820231FE339000B763E /* FBKVOController.m in Sources */,
+				FE7833B623275604001080A4 /* CCLoginVC.m in Sources */,
+				FE3E68492320A970000B763E /* CCSingleton.m in Sources */,
+				FE3E6804231FC9D5000B763E /* CCPropertyKeywordVC.m in Sources */,
+				FE78338C232412F7001080A4 /* NSObject+KVO.m in Sources */,
+				FE7833AD2326C336001080A4 /* Mediator.m in Sources */,
 				FE95FECE22DE178A00ABDB64 /* CCNSThreadVC.m in Sources */,
+				FE3E680F231FDF6D000B763E /* CCPresenter.m in Sources */,
+				FE3E6829231FE3E4000B763E /* CCViewModel.m in Sources */,
 				FE95FED122DE179F00ABDB64 /* CCGCDVC.m in Sources */,
+				FE9F2806233BE2DB00629EFD /* LinkedList1.cpp in Sources */,
 				FE283E0822FB3A8D000A017B /* CCObjcTypeLock.m in Sources */,
+				FE3489572311795500E3D40F /* CCDataPacket.m in Sources */,
+				FE3E6812231FDF95000B763E /* CCView.m in Sources */,
 				FE95FECB22DE10AC00ABDB64 /* CCThreadVC.m in Sources */,
+				FE7833A12326BA9D001080A4 /* NSArray+CCBounds.m in Sources */,
 				FE04A15322D652D600E5A802 /* AppDelegate.m in Sources */,
+				FE3E684D23216ED4000B763E /* CCDataPersistenceVC.m in Sources */,
+				FE0BBD04230434E200557FCF /* GCDAsyncUdpSocket.m in Sources */,
+				FE3CBB56232255A00007431F /* CCTableViewVC.m in Sources */,
+				FE7833942324CD91001080A4 /* CCTouchEventVC.m in Sources */,
+				FE0BBD05230434E200557FCF /* GCDAsyncSocket.m in Sources */,
+				FE78337D2323D118001080A4 /* CCKVOKVCVC.m in Sources */,
+				FE34895A2314103200E3D40F /* CCSocketPacket.m in Sources */,
+				FE1C970E2322B8EA00DB5D62 /* CCObjectVC.m in Sources */,
+				FE3CBB592322570A0007431F /* CCCommonTableViewVC.m in Sources */,
+				FE7833D723275662001080A4 /* DYMMail+Logger.m in Sources */,
+				FE1C97142322DEF600DB5D62 /* CCRuntimePerson.m in Sources */,
 				FE283DFF22F8220F000A017B /* CCDeadLockVC.m in Sources */,
+				FE9F27802333C6D800629EFD /* CCEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +1085,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G7ZDN2AJQH;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				INFOPLIST_FILE = CCBlogCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,6 +1106,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = G7ZDN2AJQH;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				INFOPLIST_FILE = CCBlogCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

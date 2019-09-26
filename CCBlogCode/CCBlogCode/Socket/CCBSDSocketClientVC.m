@@ -1,38 +1,38 @@
 //
-//  CCBSDSocketVC.m
+//  CCBSDSocketClientVC.m
 //  CCBlogCode
 //
-//  Created by zerocc on 2016/05/07.
-//  Copyright © 2016年 zerocc. All rights reserved.
+//  Created by zerocc on 2015/10/16.
+//  Copyright © 2015年 zerocc. All rights reserved.
 //
 
-#import "CCBSDSocketVC.h"
+#import "CCBSDSocketClientVC.h"
 #import <sys/socket.h>
 #import <netinet/in.h>
 #import <arpa/inet.h>
 
-@interface CCBSDSocketVC ()
+@interface CCBSDSocketClientVC ()
 @property (nonatomic, strong) UIButton *connectBtn;
 @property (nonatomic, strong) UITextField *msgTextField;
 @property (nonatomic, strong) UIButton *sendBtn;
 @property (nonatomic, strong) UITextView *receiveTextView;
+
 @property (nonatomic, strong) NSMutableAttributedString *receiveTextViewAttributeStr;
-
 @property (nonatomic, assign) int socketID;
-
 
 @end
 
-@implementation CCBSDSocketVC
+@implementation CCBSDSocketClientVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-
+    
     [self setupUI];
 }
 
 - (void)setupUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     self.connectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     self.connectBtn.frame = CGRectMake(100, 64+20, 100, 40);
     self.connectBtn.backgroundColor = [UIColor redColor];
@@ -60,14 +60,6 @@
     self.receiveTextViewAttributeStr = [[NSMutableAttributedString alloc] init];
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    // 5. 断开连接
-    if (self.socketID) {
-        close(_socketID);
-        [self.connectBtn setTitle:@"连接" forState:UIControlStateNormal];
-    }
-}
-
 - (void)connectBtnClicked {
     // 1. 创建socket
     _socketID = socket(AF_INET, SOCK_STREAM, 0);
@@ -79,16 +71,16 @@
     socketAddr.sin_family = AF_INET;
     socketAddr.sin_port = htons(8029);
     socketAddr.sin_addr = socketIn_addr;
-
+    
     int result = connect(_socketID, (const struct sockaddr *)&socketAddr, sizeof(socketAddr));
     if (result == 0) {
-        NSLog(@"socket 连接成功");
+        NSLog(@"socket 客户端连接成功");
         [self.connectBtn setTitle:@"连接成功" forState:UIControlStateNormal];
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             [self receiveMessage];
         });
     }else {
-        NSLog(@"socket 连接失败");
+        NSLog(@"socket 客户端连接失败");
     }
 }
 
@@ -96,7 +88,7 @@
     const char *msg = self.msgTextField.text.UTF8String;
     // 3. 发送数据
     ssize_t sendLength = send(self.socketID, msg, strlen(msg), 0);
-    NSLog(@"发送了:%ld字节 \n %@",sendLength, self.msgTextField.text);
+    NSLog(@"客户端发送了:%ld字节 \n %@",sendLength, self.msgTextField.text);
     [self showMsg:self.msgTextField.text msgType:0];
     self.msgTextField.text = @"";
 }
@@ -109,12 +101,20 @@
         if (receiveLength > 0) {
             NSData *receiveData  = [NSData dataWithBytes:buffer length:receiveLength];
             NSString *receiveStr = [[NSString alloc] initWithData:receiveData encoding:NSUTF8StringEncoding];
-            NSLog(@"接收了:%ld字节 \n %@",receiveLength, receiveStr);
+            NSLog(@"客户端接收了:%ld字节 \n %@",receiveLength, receiveStr);
             
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self showMsg:receiveStr msgType:1];
             });
         }
+    }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // 5. 断开连接
+    if (self.socketID) {
+        close(_socketID);
+        [self.connectBtn setTitle:@"连接" forState:UIControlStateNormal];
     }
 }
 
@@ -141,5 +141,6 @@
     [self.receiveTextViewAttributeStr appendAttributedString:[[NSMutableAttributedString alloc] initWithString:@"\n"]];
     self.receiveTextView.attributedText = self.receiveTextViewAttributeStr;
 }
+
 
 @end

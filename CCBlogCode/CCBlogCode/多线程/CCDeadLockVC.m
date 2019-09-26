@@ -204,5 +204,4 @@
     NSLog(@"取10，还剩%d元 - %@", oldMoney, [NSThread currentThread]);
 }
 
-
 @end
